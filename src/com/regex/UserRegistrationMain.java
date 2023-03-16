@@ -6,5 +6,6 @@ public class UserRegistrationMain {
         UserRegistration user = new UserRegistration();
         user.validFirstName();
         user.validLastName();
+        user.ValidEmail();
     }
 }

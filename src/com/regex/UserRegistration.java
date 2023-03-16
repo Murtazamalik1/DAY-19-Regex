@@ -34,4 +34,19 @@ public class UserRegistration {
             System.out.println("Not Valid LastName");
         }
     }
+    public void ValidEmail(){
+        Pattern pattern = Pattern.compile("^[A-Za-z0-9+_.-]+@(.+)$");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter User Email");
+        String validEmail = scanner.next();
+
+        Matcher matcher = pattern.matcher(validEmail);
+        if (matcher.matches()){
+            System.out.println(" Email Name Is Valid");
+        }
+        else {
+            System.out.println("Not Valid Email");
+        }
+
+    }
 }
