@@ -5,5 +5,6 @@ public class UserRegistrationMain {
         System.out.println("Welcome To Regex");
         UserRegistration user = new UserRegistration();
         user.validFirstName();
+        user.validLastName();
     }
 }
