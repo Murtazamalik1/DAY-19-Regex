@@ -10,5 +10,6 @@ public class UserRegistrationMain {
         user.preDefineMobileFormat();
         user.validPasswordMin8CharacterRule1();
         user.validPasswordAtLeastOneNumericNumberCaseRule3();
+        user.ValidPasswordOneSpecialCharacterRule4();
     }
 }

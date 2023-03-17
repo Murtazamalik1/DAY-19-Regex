@@ -84,4 +84,17 @@ public class UserRegistration {
             System.out.println("Not Valid password");
         }
     }
+
+    public void ValidPasswordOneSpecialCharacterRule4(){
+        Pattern pattern = Pattern.compile("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter User Password With One Special Character");
+        String password = scanner.next();
+        Matcher matcher = pattern.matcher(password);
+        if (matcher.matches()) {
+            System.out.println("Valid password");
+        } else {
+            System.out.println("Not Valid password");
+        }
+    }
 }
