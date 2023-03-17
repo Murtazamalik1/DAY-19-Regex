@@ -72,10 +72,10 @@ public class UserRegistration {
             System.out.println("Not Valid password");
         }
     }
-    public void validPasswordAtLeastOneUpperCaseRule2() {
-        Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z0-9]{7}$");
+    public void validPasswordAtLeastOneNumericNumberCaseRule3() {
+        Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{6}[0-9]{1}$");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter User Password  Min 8 character With One Upper Case");
+        System.out.println("Enter User Password ");
         String password = scanner.next();
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {

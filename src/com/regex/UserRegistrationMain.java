@@ -8,6 +8,7 @@ public class UserRegistrationMain {
         user.validLastName();
         user.ValidEmail();
         user.preDefineMobileFormat();
-        user.validPasswordAtLeastOneUpperCaseRule2();
+        user.validPasswordMin8CharacterRule1();
+        user.validPasswordAtLeastOneNumericNumberCaseRule3();
     }
 }
