@@ -47,6 +47,19 @@ public class UserRegistration {
         else {
             System.out.println("Not Valid Email");
         }
+    }
 
+    public void preDefineMobileFormat(){
+        Pattern pattern = Pattern.compile("^(\\+\\d{1,3}( )?)?((\\(\\d{3}\\))|\\d{3})[- .]?\\d{3}[- .]?\\d{4}$");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter User Mobile Number");
+        String mobileFormat = scanner.next();
+        Matcher matcher = pattern.matcher(mobileFormat);
+        if (matcher.matches()){
+            System.out.println("Valid Mobile Number");
+        }
+        else {
+            System.out.println("Not Valid Mobile Number");
+        }
     }
 }
