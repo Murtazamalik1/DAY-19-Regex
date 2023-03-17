@@ -62,4 +62,18 @@ public class UserRegistration {
             System.out.println("Not Valid Mobile Number");
         }
     }
+
+    public  void validPasswordMin8CharacterRule1(){
+        Pattern pattern = Pattern.compile("[A-Za-z0-9]{8}");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter User Password Min 8 character");
+        String password = scanner.next();
+        Matcher matcher = pattern.matcher(password);
+        if (matcher.matches()){
+            System.out.println("Valid password");
+        }
+        else {
+            System.out.println("Not Valid password");
+        }
+    }
 }
